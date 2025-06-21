@@ -9,3 +9,6 @@ Uses Powershell to copy a install file to each computer inside an AD OU, then PS
 
 ## PS-PSEXEC_Remote_DLL_Replace.ps1
 Uses PowerShell and PSEXEC to Unregister, rename, and replace UEClientObj.dll. Can be edited to target any .dll/file.
+
+## FLAC_Copy_NoMP3.ps1
+Scans a music folder for album directories that contain .flac files at the top level (ignores subfolders). If found, copies the entire album folder—including subdirectories—to a new location. Skips any album folders without top-level .flac files and logs both copied and skipped folders. Has a toggle to do a dry run.
