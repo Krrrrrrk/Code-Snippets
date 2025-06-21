@@ -44,10 +44,10 @@ foreach ($folder in $albumFolders) {
             Add-Content -Path $actionLogPath -Value $logMsg
 
             # Robocopy the folder (log output to console and file)
-            $robocopyArgs = @(
-                "`"$folder.FullName`"", "`"$targetPath`"",
-                "/E", "/COPYALL", "/R:1", "/W:1", "/NFL", "/NDL", "/NJH", "/NJS"
-            )
+$robocopyArgs = @(
+    "`"$($folder.FullName)`"", "`"$($targetPath)`"",
+    "/E", "/COPYALL", "/R:1", "/W:1", "/NFL", "/NDL", "/NJH", "/NJS"
+)
 
             $tempLog = [System.IO.Path]::GetTempFileName()
 
