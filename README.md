@@ -12,3 +12,6 @@ Uses PowerShell and PSEXEC to Unregister, rename, and replace UEClientObj.dll. C
 
 ## FLAC_Copy_NoMP3.ps1
 Scans a music folder for album directories that contain .flac files at the top level (ignores subfolders). If found, copies the entire album folder, including subdirectories, to a new location. Skips any album folders without top-level .flac files and logs both copied and skipped folders. Has a toggle to do a dry run.
+
+## PS_RandomizeFonts.jsx
+Randomizes each character in a selected text box in Adobe Illustrator (Mostly Untested)
